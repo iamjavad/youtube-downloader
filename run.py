@@ -2,6 +2,7 @@
 
 from pytube import YouTube
 from termcolor import colored
+from banner import banner
 
 url = input(colored('enter url:', 'blue'))
 yt = YouTube(url)
