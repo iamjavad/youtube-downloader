@@ -5,13 +5,8 @@ from pytube import YouTube
 url = input('enter url:')
 yt = YouTube(url)
 
-def url():
-    #url 
-    #yt
-    print(f'file name:{yt.title}')
-    print(f'sample pictur:{yt.thumbnail_url}')
-
-url()
+print(f'file name:{yt.title}')
+print(f'sample pictur:{yt.thumbnail_url}')
 
 dorn = input('''start Download:
     1-yes
