@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 
 from pytube import YouTube
+from termcolor import colored
 
-url = input('enter url:')
+url = input(colored('enter url:', 'blue'))
 yt = YouTube(url)
 
-print(f'file name:{yt.title}')
-print(f'sample pictur:{yt.thumbnail_url}')
+print(colored(f'file name:{yt.title}', 'green'))
+print(colored(f'sample picture:{yt.thumbnail_url}', 'green'))
 
 dorn = input('''start Download:
     1-yes
