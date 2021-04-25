@@ -4,7 +4,7 @@ from pytube import YouTube
 from termcolor import colored
 from banner import banner
 
-url = input(colored('enter url:', 'blue'))
+url = input(colored('Enter url:', 'blue'))
 yt = YouTube(url)
 
 print(colored(f'file name:{yt.title}', 'green'))
@@ -21,6 +21,6 @@ elif dorn == '2':
     print('good bye!')
     pass
 elif dorn == '3':
-    url = input('enter url:')
+    url = input('Enter url:')
     yt = YouTube(url)
     yt.streams.first().download()
