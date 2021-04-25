@@ -2,10 +2,12 @@
 
 from pytube import YouTube
 
-url = YouTube('https://www.youtube.com/watch?v=ulNswX3If6U')
+url = input('enter url:')
+#url = YouTube('https://www.youtube.com/watch?v=ulNswX3If6U')
+yt = YouTube(url)
 
-print(url.title)
+print(f'file name:{yt.title}')
 
-print(url.thumbnail_url)
+print(yt.thumbnail_url)
 
-print(url.streams.first().download())
+yt.streams.first().download()
