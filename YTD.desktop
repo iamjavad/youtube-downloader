@@ -1,0 +1,10 @@
+#move this file to /usr/share/applications
+[Desktop Entry]
+Encoding=UTF-8
+Name=YouTube Downloader
+Comment=Downloader
+Exec=python3 /home/javad/git-project/youtube_downloader/run.py
+Icon=/home/javad/git-project/youtube_downloader/yt.jpeg
+Categories=Application
+Type=Application
+Terminal=true
