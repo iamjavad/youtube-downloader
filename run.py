@@ -6,8 +6,8 @@ url = input('enter url:')
 yt = YouTube(url)
 
 def url():
-    url 
-    yt
+    #url 
+    #yt
     print(f'file name:{yt.title}')
     print(f'sample pictur:{yt.thumbnail_url}')
 
@@ -26,4 +26,4 @@ elif dorn == '2':
 elif dorn == '3':
     url = input('enter url:')
     yt = YouTube(url)
-    url()
+    yt.streams.first().download()
